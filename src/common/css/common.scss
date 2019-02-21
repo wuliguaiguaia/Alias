@@ -1,0 +1,54 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+h1.main-title {
+    font-size: 35px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 50%;
+        height: 5px;
+        background: #b7b717fa;
+    }
+
+    @media screen and (max-width:500px) {
+        display: none;
+    }
+    @media screen and (max-width:768px) {
+        font-size:20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        &:after{
+            height: 2px;
+            bottom: -5px
+        }
+    }
+}
+
+.card {
+    border: 1px solid red;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width:768px) {}
