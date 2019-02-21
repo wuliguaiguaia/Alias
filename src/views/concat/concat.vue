@@ -21,7 +21,7 @@
             </svg>
           </div>
           <div>
-            <a href="https://www.zhihu.com/people/da-da-da-xiao-jie-82/posts">SenYia_</a>
+            <a href="./QR.jpg" target="_blank">SenYia_</a>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
             </svg>
           </div>
           <div>
-            <a href="https://www.zhihu.com/people/da-da-da-xiao-jie-82/posts">森仪</a>
+            <a href="https://www.zhihu.com/people/da-da-da-xiao-jie-82/posts" target="_blank">森仪</a>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@
             </svg>
           </div>
           <div>
-            <a href="https://github.com/wuliguaiguaia?tab=repositories">wuliguaiguaia</a>
+            <a href="https://github.com/wuliguaiguaia?tab=repositories" target="_blank">wuliguaiguaia</a>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@ export default {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  animation: float 2s ease-out  infinite  ;
+  // animation: float 2s ease-out  infinite  ;
   animation-iteration-count: infinite;
 }
 .uniq {

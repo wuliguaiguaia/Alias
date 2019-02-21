@@ -130,7 +130,7 @@
                   <button class>
                     <a
                       class="btn-default"
-                      href=" https://wuliguaiguaia.github.io/vue_youzan/dist/index.html" target="_blank"
+                      href="./translate/QR.jpg" target="_blank"
                     >项目预览</a>
                   </button>
                 </div>
