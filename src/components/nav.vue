@@ -14,7 +14,9 @@
           </router-link>
         </li>
       </ul>
-      <button class="btn-default btnpdf animated swing" @click="goPDF">查看PDF</button>
+      <button class="btn-default btnpdf animated swing">
+        <a href="https://wuliguaiguaia.github.io/Alias/pdf/pdf.html" target="_blank">查看PDF</a>
+        </button>
     </div>
     <div class="nav-top fixed-top">
       <div class="flex-between">
@@ -104,10 +106,6 @@ export default {
     });
   },
   methods: {
-    goPDF() {
-      location.href =
-        "https://wuliguaiguaia.github.io/vue_reasume/pdf/pdf.html";
-    },
     showNav() {
       $(".minNav-wrapper .nav").toggleClass("show");
     },
@@ -181,10 +179,16 @@ export default {
   left: 30px;
   padding: 14px 20px;
   background: #c3b327;
-  color: #fff;
   border-radius: 5px;
   animation-iteration-count: infinite;
   animation-duration: 2s;
+  a{
+    width: 100%;
+    height: 100%;
+    display: block;
+  color: #fff;
+
+  }
 }
 
 .slidenav-enter,

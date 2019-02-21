@@ -130,7 +130,7 @@
                   <button class>
                     <a
                       class="btn-default"
-                      href="./translate/QR.jpg" target="_blank"
+                      href="https://i.loli.net/2019/02/22/5c6ecf52dcd38.jpg" target="_blank"
                     >项目预览</a>
                   </button>
                 </div>

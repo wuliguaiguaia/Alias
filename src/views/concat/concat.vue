@@ -21,7 +21,7 @@
             </svg>
           </div>
           <div>
-            <a href="./QR.jpg" target="_blank">SenYia_</a>
+            <a href="https://i.loli.net/2019/02/22/5c6ecf5305f6f.jpg" target="_blank">SenYia_</a>
           </div>
         </div>
       </div>
