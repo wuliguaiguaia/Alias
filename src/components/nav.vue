@@ -62,11 +62,11 @@ export default {
           href: "/portfolio",
           id: 1003
         },
-        // {
-        //   label: "精选博客 Blog",
-        //   href: "/blog",
-        //   id: 1004
-        // },
+        {
+          label: "精选博客 Blog",
+          href: "/blog",
+          id: 1004
+        },
         {
           label: "联系我 Concat me",
           icon: "#icon-call",

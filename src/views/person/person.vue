@@ -59,8 +59,7 @@
               <use xlink:href="#icon-jiaoyujingli"></use>
             </svg>
             <h1>Learning process</h1>
-            <!-- <p>自学前端开发，学习资源是视频课程及相关书籍，从基本的静态页面到响应式页面，熟练弹性布局及移动端页面开发，学习javascript的DOM，BOM，ajax等核心功能，期间制作小游戏如五子棋，2048，flappy bird等。熟悉Vue技术栈，熟悉模块化、工程化开发流程，熟练使用ES6写代码，有小程序、移动端开发经验，至此有1年学习经验</p> -->
-            <p>自学前端开发，学习资源是视频课程及相关书籍,从基本的静态页面到响应式页面，熟练弹性布局及移动端页面开发,熟练Vue技术栈，熟悉模块化、工程化开发流程,有小程序、移动端开发经验，至此有1年学习经验。</p>
+            <p>自学前端开发，学习资源是视频课程，相关书籍以及MDN,从基本的静态页面到响应式页面，熟练弹性布局及移动端页面开发，熟练Vue技术栈，熟悉工程化，模块化，组件化开发，有小程序、移动端开发经验，至此有1年学习经验。</p>
           </div>
         </div>
         <div class="item item-right">
@@ -70,10 +69,9 @@
             </svg>
             <h1>Get honor</h1>
             <ol>
-              <li>励志奖学金</li>
+              <li>国家励志奖学金</li>
               <li>品学兼优二等奖</li>
               <li>英语四级</li>
-              <li>计算机二级</li>
               <li>校园歌舞大赛三等奖</li>
               <li>校级优秀社团干部</li>
               <li>优秀共青团员，三好学生</li>
@@ -122,7 +120,7 @@ export default {
             .addClass("animated bounceInRight")
             .show();
         }
-        if ($(e.currentTarget).scrollTop() >= 51 + $(".section2 .header").height()) {
+        if ($(e.currentTarget).scrollTop() >= $(".section2 .header").height()) {
           $(".section2 .item-left")
             .addClass("animated bounceInLeft")
             .show();
@@ -252,12 +250,12 @@ export default {
       margin-bottom: 30px;
     }
     .box {
-      background: rgba(7, 156, 73, 0.89);
+      background: rgba(7, 156, 73, 0.6);
       color: #fff;
       min-height: 330px;
       padding: 30px 23px;
       &.honor {
-        background: rgba(239, 171, 21, 0.8);
+        background: rgba(239, 171, 21, 0.6);
       }
       .icon {
         width: 58px;

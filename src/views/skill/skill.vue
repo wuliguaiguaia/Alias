@@ -6,7 +6,7 @@
         <div class="item item1" data-tilt data-tilt-scale="1.1">
           <h1>01</h1>
           <ol>
-            <li>熟练 HTML,了解语义化标签，熟练标准DOM事件</li>
+            <li>熟练 HTML,了解语义化标签，熟练DOM事件</li>
             <li>熟练 CSS 核心概念，盒模型，文档流，浮动，定位，BFC，各种居中</li>
             <li>熟练 flex 弹性布局，移动端配置</li>
           </ol>
@@ -16,10 +16,10 @@
         <div class="item item2" data-tilt data-tilt-scale="1.1">
           <h1>02</h1>
           <ol>
-            <li>熟练 Javascript 及 常用es6语法</li>
-            <li>了解原型，闭包，this</li>
-            <li>熟练 localStorage，ajax，promise，正则表达式</li>
-            <li>熟悉 同源协议，跨域，jsonp</li>
+            <li>1. 熟练 Javascript 及 常用es6语法</li>
+            <li>2. 了解原型，闭包，this</li>
+            <li>3. 熟练 web存储，熟练异步操作ajax，promise，await/async</li>
+            <li>4. 熟练常用正则表达式</li>
           </ol>
         </div>
       </div>
@@ -27,9 +27,9 @@
         <div class="item item3" data-tilt data-tilt-scale="1.1">
           <h1>03</h1>
           <ol>
-            <li>熟练 jquery，读过源码</li>
+            <li>熟练 jquery DOM操作，动画等</li>
             <li>熟练 sass 嵌套，函数，mixin</li>
-            <li>使用过 gulp，webpack基本配置，用过parcel</li>
+            <li>熟悉 同源协议，跨域，jsonp</li>
           </ol>
         </div>
       </div>
@@ -38,8 +38,8 @@
           <h1>04</h1>
           <ol>
             <li>熟练 vueJs 语法，了解生命周期，指令，计算属性等</li>
-            <li>熟练 vue-router路由配置，vuex状态管理</li>
-            <li>熟练小程序基本语法及云开发，有项目经验</li>
+            <li>熟练 vue-router 路由配置，vuex 状态管理</li>
+            <li>了解 MVC MVVM 开发模式，代码层面向模块化组件化靠近</li>
           </ol>
         </div>
       </div>
@@ -47,8 +47,9 @@
         <div class="item item5" data-tilt data-tilt-scale="1.1">
           <h1>05</h1>
           <ol>
-            <li>熟悉http协议 及 TCP/IP协议</li>
-            <li>研究过常用排序算法</li>
+            <li>熟悉 http 协议</li>
+            <li>使用过 gulp，webpack 基本配置，用过parcel</li>
+            <li>熟练小程序基本语法及云开发，有项目经验</li>
             <li>热爱前端，对新技术无限好奇，喜欢写博客</li>
           </ol>
         </div>
@@ -56,7 +57,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import VanillaTilt from "vanilla-tilt";
 import $ from "jquery";
@@ -66,24 +66,24 @@ export default {
       this.initVanilaTilt();
       this.toggleClass(1);
     } else {
-      this.init()
+      this.init();
       this.initScroll();
     }
   },
   destroyed() {
-    $('.container').animate({ scrollTop: 0 }, 500);
+    $(".container").animate({ scrollTop: 0 }, 500);
   },
   methods: {
-    init(){
+    init() {
       setTimeout(() => {
-        $(".skill .box").first().addClass("scale")
+        $(".skill .box")
+          .first()
+          .addClass("scale");
       }, 50);
     },
     initScroll() {
       $("#app .container").on("scroll", function(e) {
         $(".skill .box").each((i, el) => {
-          console.log($(el).offset().top , i);
-          
           if (
             $(el).offset().top <= 259 &&
             $(el).offset().top + $(el).height() <= 553
@@ -100,9 +100,6 @@ export default {
       if (n === 1) {
         $(".skill .box.even").addClass("animated bounceInUp");
         $(".skill .box.odd").addClass("animated bounceInDown");
-      } else {
-        // $(".skill .box.even").addClass("animated bounceInLeft");
-        // $(".skill .box.odd").addClass("animated bounceInRight");
       }
     },
     initVanilaTilt() {
@@ -164,7 +161,7 @@ export default {
     margin: 58px;
     .box {
       transform: scale(1);
-      transition: transform .5s;
+      transition: transform 0.5s;
       &.scale {
         transform: scale(1.2);
       }
