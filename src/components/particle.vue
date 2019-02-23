@@ -141,7 +141,7 @@ export default {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(39, 38, 39, 0.8);
+  background-color: rgba(60, 40, 95, 0.3215686274509804);
   z-index: -99999;
 }
 </style>

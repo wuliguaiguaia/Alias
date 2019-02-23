@@ -115,7 +115,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(202, 201, 201);
+  color: #fdfdfd;
   padding: 10px;
   font-size: 12px;
   &.zhihu .icon {
@@ -127,7 +127,7 @@ export default {
     height: 40px;
   }
   a {
-    color: rgb(202, 201, 201);
+    color:#fdfdfd;
     text-decoration: underline;
   }
 

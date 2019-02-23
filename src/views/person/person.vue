@@ -88,11 +88,13 @@ import $ from "jquery";
 export default {
   mounted() {
     this.init();
-    this.initVanilaTilt();
+    if ($(window).width() > 500) {
+      this.initVanilaTilt();
+    }
     this.initScroll();
   },
   destroyed() {
-    $('.container').animate({ scrollTop: 0 }, 500);
+    $(".container").animate({ scrollTop: 0 }, 500);
   },
   methods: {
     initVanilaTilt() {
@@ -105,11 +107,11 @@ export default {
         speed: 400
       });
       VanillaTilt.init(document.querySelector(".process"), {
-        max: 50,
+        max: 25,
         speed: 400
       });
       VanillaTilt.init(document.querySelector(".honor"), {
-        max: 50,
+        max: 25,
         speed: 400
       });
     },
@@ -190,24 +192,26 @@ export default {
   .info-wrapper {
     margin-top: 70px;
     width: 450px;
+    position: relative;
   }
+
   .info {
     background: #000;
     font-size: 14px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     color: #fff;
     border: 1px solid #fff;
-      position: relative;
-     &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 10px solid #6b736b;
-        bottom: -28px;
-        right: -28px;
-        z-index: -5;
-      }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 10px solid #32895b;
+      bottom: -28px;
+      right: -28px;
+      z-index: -5;
+    }
+
     .tem {
       margin: 5px;
       padding: 20px 100px;

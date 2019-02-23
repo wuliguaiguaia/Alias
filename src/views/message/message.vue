@@ -181,12 +181,12 @@ export default {
   .info {
     text-align: right;
     font-size: 12px;
-    color: #999;
+    color: #d2d2d2;
   }
   .form {
     position: relative;
     form {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
       * {
         padding: 10px;
         background-color: transparent;
@@ -199,7 +199,7 @@ export default {
       }
       button {
         border: none;
-        background-color: rgba(212, 59, 51, 1);
+        background-color: rgb(190, 78, 72);
       }
     }
 
@@ -228,11 +228,11 @@ export default {
     margin-top: 20px;
     .item{
       padding: 10px;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.4);
       margin-bottom: 10px;
     }
     .name {
-      color: cornflowerblue;
+      color: #f18664;
       font-size: 14px;
     }
     .time {

@@ -8,7 +8,7 @@
         <li class="item" v-for="item in list" :key="item.id" @click="go">
           <router-link :to="item.href">
             <svg class="icon" aria-hidden="true">
-              <use xlink:href="item.icon"></use>
+              <use :xlink:href="item.icon"></use>
             </svg>
             {{item.label}}
           </router-link>
@@ -16,7 +16,7 @@
       </ul>
       <button class="btn-default btnpdf animated swing">
         <a href="https://wuliguaiguaia.github.io/Alias/pdf/pdf.html" target="_blank">查看PDF</a>
-        </button>
+      </button>
     </div>
     <div class="nav-top fixed-top">
       <div class="flex-between">
@@ -53,29 +53,30 @@ export default {
         {
           label: "技能 Technology stack",
           href: "/skill",
-          icon: "#icon-zhuanyezhishijineng",
+          icon: "#icon-topBtn",
           id: 1002
         },
         {
           label: "项目 Portfolio",
-          icon: "#icon-xiangmu",
+          icon: "#icon-project",
           href: "/portfolio",
           id: 1003
         },
         {
           label: "精选博客 Blog",
           href: "/blog",
+          icon: "#icon-ego-blog",
           id: 1004
         },
         {
           label: "联系我 Concat me",
-          icon: "#icon-call",
+          icon: "#icon-call1",
           href: "/concat",
           id: 1005
         },
         {
           label: "留言板 Message",
-          icon: "#icon-msg",
+          icon: "#icon-message",
           href: "/message",
           id: 1006
         }
@@ -101,7 +102,7 @@ export default {
     });
     $(".container").on("click", e => {
       console.log(1);
-      
+
       $(".minNav-wrapper .nav").removeClass("show");
     });
   },
@@ -141,11 +142,17 @@ export default {
           width: 20px;
           height: 20px;
           margin-right: 10px;
+          color: #b1abab;
+          vertical-align: bottom;
         }
       }
       .router-link-active {
         background-color: #fff;
         color: #d43b33;
+        .icon {
+          color: #d43b33;
+
+        }
       }
     }
   }
@@ -182,12 +189,11 @@ export default {
   border-radius: 5px;
   animation-iteration-count: infinite;
   animation-duration: 2s;
-  a{
+  a {
     width: 100%;
     height: 100%;
     display: block;
-  color: #fff;
-
+    color: #fff;
   }
 }
 
@@ -212,6 +218,7 @@ export default {
         padding: 14px 20px;
         .icon {
           margin-right: 5px;
+          color: #fff;
         }
       }
     }

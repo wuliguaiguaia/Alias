@@ -26,7 +26,8 @@
                   <button class>
                     <a
                       class="btn-default"
-                      href="https://github.com/wuliguaiguaia/netease-music" target="_blank"
+                      href="https://github.com/wuliguaiguaia/netease-music"
+                      target="_blank"
                     >项目源码</a>
                   </button>
                 </div>
@@ -68,17 +69,22 @@
                     <li>使用 vuex 进行地址状态管理，支持增删改查</li>
                     <li>使用 axios + promise 异步请求</li>
                     <li>使用 rap2 接口管理平台，使用 mock.js 进行数据模拟</li>
-                    <li>使用 swiper + mint-ui + velocity-animate 插件</li>
+                    <li>使用 mint-ui + velocity-animate 插件</li>
                   </ol>
                 </div>
                 <div class="link">
                   <button class>
-                    <a class="btn-default" href="https://github.com/wuliguaiguaia/vue_youzan" target="_blank">项目源码</a>
+                    <a
+                      class="btn-default"
+                      href="https://github.com/wuliguaiguaia/vue_youzan"
+                      target="_blank"
+                    >项目源码</a>
                   </button>
                   <button class>
                     <a
                       class="btn-default"
-                      href=" https://wuliguaiguaia.github.io/vue_youzan/dist/index.html" target="_blank"
+                      href=" https://wuliguaiguaia.github.io/vue_youzan/dist/index.html"
+                      target="_blank"
                     >项目预览</a>
                   </button>
                 </div>
@@ -124,13 +130,15 @@
                   <button class>
                     <a
                       class="btn-default"
-                      href="https://github.com/wuliguaiguaia/miniprogram-translate" target="_blank"
+                      href="https://github.com/wuliguaiguaia/miniprogram-translate"
+                      target="_blank"
                     >项目源码</a>
                   </button>
                   <button class>
                     <a
                       class="btn-default"
-                      href="https://i.loli.net/2019/02/22/5c6ecf52dcd38.jpg" target="_blank"
+                      href="https://i.loli.net/2019/02/22/5c6ecf52dcd38.jpg"
+                      target="_blank"
                     >项目预览</a>
                   </button>
                 </div>
@@ -184,7 +192,7 @@ export default {
         { img: require("./translate/page3.jpg") },
         { img: require("./translate/page5.jpg") },
         { img: require("./translate/page4.jpg") }
-        ],
+      ],
       mallList: [
         { img: require("./mall/page1.jpg") },
         { img: require("./mall/page2.jpg") },
@@ -194,10 +202,8 @@ export default {
       ]
     };
   },
-  destroyed(){
-    $('.container').animate({ scrollTop: 0 }, 500);
-  },
   mounted() {
+    $(".container").animate({ scrollTop: 0 }, 500);
     this.init();
     this.onScroll();
   },
@@ -212,7 +218,7 @@ export default {
         this.status = "showRight";
         this.dir = "hor";
       }
-    },
+    }
     // touchDiffY(val) {
     //   if (val > 100) {
     //     this.dir = "ver";
@@ -228,13 +234,13 @@ export default {
     // }
   },
   methods: {
-    init(){
+    init() {
       this.media = this.resize();
-    $(".portfolio section")
-      .first()
-      .css({ opaicty: 1 })
-      .nextAll(".item-wrapper")
-      .css({ opacity: 0 });
+      $(".portfolio section")
+        .first()
+        .css({ opaicty: 1 })
+        .nextAll(".item-wrapper")
+        .css({ opacity: 0 });
     },
     show(page, dir) {
       if (this.media === "pc") {
@@ -254,25 +260,25 @@ export default {
         }
       }
     },
-    onScroll(){
+    onScroll() {
       $(".container").on("scroll", () => {
-      $(".portfolio .item-wrapper").each((i, el) => {
-        console.log($(el).offset().top, i);
+        $(".portfolio .item-wrapper").each((i, el) => {
+          console.log($(el).offset().top, i);
 
-        if ($(el).offset().top < $(el).height() / 1.2) {
-          this.page = i;
-          console.log($(el).css("opacity"), "opaci");
-          if ($(el).css("opacity") == 0) {
-            $(".portfolio section")
-              .eq(i)
-              .addClass("animated bounceInUp")
-              .css({ opacity: 1 })
-              .siblings()
-              .removeClass("animated bounceInUp");
+          if ($(el).offset().top < $(el).height() / 1.2) {
+            this.page = i;
+            console.log($(el).css("opacity"), "opaci");
+            if ($(el).css("opacity") == 0) {
+              $(".portfolio section")
+                .eq(i)
+                .addClass("animated bounceInUp")
+                .css({ opacity: 1 })
+                .siblings()
+                .removeClass("animated bounceInUp");
+            }
           }
-        }
+        });
       });
-    });
     },
     resize() {
       if ($(window).width() > 500) {
@@ -438,9 +444,9 @@ export default {
     }
   }
 }
-@media screen and (max-width:768px){
-  .item-wrapper .content .left .slide-icon{
-    display:block;
+@media screen and (max-width: 768px) {
+  .item-wrapper .content .left .slide-icon {
+    display: block;
   }
 }
 @media screen and (max-width: 500px) {
