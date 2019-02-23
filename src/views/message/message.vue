@@ -1,7 +1,7 @@
 <template>
   <div class="message">
     <h1 class="main-title animated bounceInRight">Message</h1>
-    <div class="wrapper">
+    <div class="wrapper animated bounceInUp">
       <div class="form">
         <form class="flex-col">
           <input type="text" placeholder="Enter your name ~" v-model="data.username">

@@ -31,6 +31,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     background: #fff;
+    position: relative;
 }
 
 header {
@@ -173,7 +174,7 @@ main {
 .go {
     color: #fff;
     background: #FF5722;
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 10px;
     padding: 10px;
@@ -243,7 +244,7 @@ main section{
         background: #ccc;
     }
 
-    .go {
+    .noprint {
         display: none;
     }
 }

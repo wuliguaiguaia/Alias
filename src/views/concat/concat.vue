@@ -1,8 +1,8 @@
 <template>
   <div class="concat">
     <h1 class="main-title animated bounceInRight">Concat me</h1>
-    <div class="wrapper flex-wrap">
-      <div class="item animated">
+    <div class="wrapper flex-wrap animated bounceInUp">
+      <div class="item">
         <div class="content tel">
           <div>
             <svg class="icon" aria-hidden="true">

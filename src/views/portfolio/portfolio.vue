@@ -68,7 +68,7 @@
                     <li>使用 vue-cli3 进行原型开发并配置 vue.config.js</li>
                     <li>使用 vuex 进行地址状态管理，支持增删改查</li>
                     <li>使用 axios + promise 异步请求</li>
-                    <li>使用 rap2 接口管理平台，使用 mock.js 进行数据模拟</li>
+                    <li>使用 easy-mock 接口管理平台，使用 mock.js 进行数据模拟</li>
                     <li>使用 mint-ui + velocity-animate 插件</li>
                   </ol>
                 </div>
@@ -116,14 +116,14 @@
               <!-- -->
               <div class="tem">
                 <div class="title">
-                  <h2>小程序实现翻译工具</h2>
+                  <h2>小程序翻译工具</h2>
                 </div>
                 <div class="desc">一款多功能翻译小程序，支持多语言，历史，收藏，留言等功能，使用云开发与本地存储。</div>
                 <div class="info">
                   <ol>
                     <li>云开发，数据库与云函数的使用</li>
                     <li>小程序生命周期</li>
-                    <li>其他涉及音频，存储，动画，相关技巧</li>
+                    <li>其他涉及音频，存储，动画等相关技巧</li>
                   </ol>
                 </div>
                 <div class="link">

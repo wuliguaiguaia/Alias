@@ -27,7 +27,7 @@
         <div class="item item3" data-tilt data-tilt-scale="1.1">
           <h1>03</h1>
           <ol>
-            <li>熟练 jquery DOM操作，动画等</li>
+            <li>熟练 jquery，bootstrap</li>
             <li>熟练 sass 嵌套，函数，mixin</li>
             <li>熟悉 同源协议，跨域，jsonp</li>
           </ol>
