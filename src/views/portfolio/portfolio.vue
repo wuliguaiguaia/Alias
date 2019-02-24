@@ -18,7 +18,7 @@
                     <li>使用语言：html + css + sass + javascript + jquery</li>
                     <li>使用 flex/vw/vh 进行移动端适配，并定制全局 reset.css</li>
                     <li>使用 localStorage 存储用户搜索历史</li>
-                    <li>仿 vueJs 构建 MVC 设计模,编写 eventHub 发布订阅模式进行各模块间逻辑交互</li>
+                    <li>仿 vueJs 构建 MVC 设计模式,编写 eventHub 发布订阅模式进行各模块间逻辑交互</li>
                     <li>learnCloud 进行数据库存储,七牛云文件上传</li>
                   </ol>
                 </div>
