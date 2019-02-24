@@ -48,6 +48,11 @@
           </transition>
         </div>
       </div>
+      <div id="bottomIcon">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shuangjiantouxia"></use>
+        </svg>
+      </div>
     </section>
     <!-- </transition> -->
     <!-- <transition name="proslide"> -->
@@ -104,6 +109,11 @@
             </div>
           </transition>
         </div>
+      </div>
+      <div id="bottomIcon">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shuangjiantouxia"></use>
+        </svg>
       </div>
     </section>
     <!-- </transition> -->
@@ -353,13 +363,16 @@ export default {
   overflow: hidden;
   height: calc(100vh - 50px);
   transition: transform 0.5s;
+  position:relative;
   .item {
     width: 100%;
   }
   &.offsetTop {
     transform: translateY(-100%);
   }
+  
 }
+
 .item-wrapper .content {
   overflow: scroll;
   .left {

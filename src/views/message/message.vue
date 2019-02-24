@@ -75,6 +75,14 @@ export default {
       e.preventDefault();
       let reg = /^\s+$/;
       if (!reg.test(this.data.username) && !reg.test(this.data.message)) {
+        if(!this.data.username){
+          alert("请输入姓名")
+          return
+        }
+        if(!this.data.message){
+          alert("请输入留言内容")
+          return
+        }
         this.wait = true;
         let data = {
           username: this.data.username,

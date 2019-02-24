@@ -29,6 +29,11 @@
           </svg>
         </a>
       </div>
+      <div id="bottomIcon">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shuangjiantouxia"></use>
+        </svg>
+      </div>
     </div>
     <div class="card card2">
       <h2 class="title">
@@ -76,6 +81,11 @@
             <use xlink:href="#icon-cc-arrow-right"></use>
           </svg>
         </a>
+      </div>
+      <div id="bottomIcon">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-shuangjiantouxia"></use>
+        </svg>
       </div>
     </div>
     <div class="card card3">
@@ -210,6 +220,7 @@ image.onload = () => {
     padding: 20px 20px 10px;
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
+    position: relative;
 
     .title {
       cursor: pointer;
