@@ -227,24 +227,11 @@ main section{
 @media print {
     header {
         padding: 30px 0 10px 0;
-
     }
 
     aside {
         width: 240px;
         border-right: 1px solid #ccc;
         padding-top: 100px;
-    }
-
-    aside .avatar img {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        border: 1px solid #ccc;
-        background: #ccc;
-    }
-
-    .noprint {
-        display: none;
     }
 }
