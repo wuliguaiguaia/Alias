@@ -47,11 +47,11 @@
           </div>
         </div>
       </div>
-      <div id="bottomIcon">
+      <!-- <div id="bottomIcon">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-shuangjiantouxia"></use>
         </svg>
-      </div>
+      </div> -->
     </div>
     <div class="section section2">
       <div class="header">

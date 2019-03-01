@@ -14,7 +14,7 @@
                 </div>
                 <div class="desc">仿移动端网易云音乐，包含后台管理系统，支持上传歌曲，歌词，编辑歌曲，删除等，支持定制歌单。可在线听歌，查看歌词等。</div>
                 <div class="info">
-                  <ol>
+                  <ol class="showStyle">
                     <li>使用语言：html + css + sass + javascript + jquery</li>
                     <li>使用 flex/vw/vh 进行移动端适配，并定制全局 reset.css</li>
                     <li>使用 localStorage 存储用户搜索历史</li>
@@ -30,6 +30,13 @@
                       target="_blank"
                     >项目源码</a>
                   </button>
+                  <button class>
+                    <a
+                      class="btn-default"
+                      href="https://wuliguaiguaia.github.io/netease-music/src/index.html"
+                      target="_blank"
+                    >项目预览</a>
+                  </button>
                 </div>
                 <div class="slide-icon">
                   <svg class="icon" aria-hidden="true">
@@ -42,17 +49,17 @@
           <transition name="rightMove">
             <div class="right" v-show="show(0,'showRight')">
               <div class="pic">
-                <swiper :lists="musicList"></swiper>
+                <myswiper :lists="musicList"></myswiper>
               </div>
             </div>
           </transition>
         </div>
       </div>
-      <div id="bottomIcon">
+      <!-- <div id="bottomIcon">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-shuangjiantouxia"></use>
         </svg>
-      </div>
+      </div> -->
     </section>
     <!-- </transition> -->
     <!-- <transition name="proslide"> -->
@@ -64,11 +71,11 @@
               <!-- -->
               <div class="tem">
                 <div class="title">
-                  <h2>Vue重构移动端有赞商城</h2>
+                  <h2>有赞商城</h2>
                 </div>
-                <div class="desc">仿移动端有赞商城，使用mock数据，支持地址编辑，购物车结算，查看商品，搜索商品及店铺等功能</div>
+                <div class="desc">仿移动端有赞商城，使用mock数据，支持地址编辑，购物车结算，查看商品，搜索商品及店铺等功能。</div>
                 <div class="info">
-                  <ol>
+                  <ol class="showStyle">
                     <li>使用语言：vue + axios + vuex + vue-router + sass + eslint + es6</li>
                     <li>使用 vue-cli3 进行原型开发并配置 vue.config.js</li>
                     <li>使用 vuex 进行地址状态管理，支持增删改查</li>
@@ -104,17 +111,17 @@
           <transition name="rightMove">
             <div class="right" v-show="show(1,'showRight')">
               <div class="pic">
-                <swiper :lists="mallList"></swiper>
+                <myswiper :lists="mallList"></myswiper>
               </div>
             </div>
           </transition>
         </div>
       </div>
-      <div id="bottomIcon">
+      <!-- <div id="bottomIcon">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-shuangjiantouxia"></use>
         </svg>
-      </div>
+      </div> -->
     </section>
     <!-- </transition> -->
     <!-- <transition name="proslide"> -->
@@ -126,14 +133,15 @@
               <!-- -->
               <div class="tem">
                 <div class="title">
-                  <h2>小程序翻译工具</h2>
+                  <h2>猿译 for fun</h2>
                 </div>
                 <div class="desc">一款多功能翻译小程序，支持多语言，历史，收藏，留言等功能，使用云开发与本地存储。</div>
                 <div class="info">
-                  <ol>
-                    <li>云开发，数据库与云函数的使用</li>
-                    <li>小程序生命周期</li>
-                    <li>其他涉及音频，存储，动画等相关技巧</li>
+                  <ol class="showStyle">
+                    <li>使用web存储用户搜索，用户便于查看翻译记录</li>
+                    <li>使用云开发做用户收藏，用数据库进行永久存储</li>
+                    <li>历史页面与收藏页面关联，可随时控制是否收藏</li>
+                    <li>留言页面详细记录用户信息且用户可删除</li>
                   </ol>
                 </div>
                 <div class="link">
@@ -163,7 +171,60 @@
           <transition name="rightMove">
             <div class="right" v-show="show(2,'showRight')">
               <div class="pic">
-                <swiper :lists="transList"></swiper>
+                <myswiper :lists="transList"></myswiper>
+              </div>
+            </div>
+          </transition>
+        </div>
+      </div>
+    </section>
+    <section class="section3 item-wrapper">
+      <div class="item">
+        <div class="content flex">
+          <transition name="leftMove">
+            <div class="left jusCenter-alignCenter" v-show="show(2,'showLeft')">
+              <!-- -->
+              <div class="tem">
+                <div class="title">
+                  <h2>调皮的机器猫</h2>
+                </div>
+                <div class="desc">这是一个用css3向画面绘制机器猫的项目，亮点在于添加文本与绘制图形同步进行，让用户直观看到整个绘制过程。</div>
+                <div class="info">
+                  <ol class="showStyle">
+                    <li>可选择重新绘制将整个画面重置</li>
+                    <li>可加速减速控制绘制节奏</li>
+                    <li>可随时暂停或直接跳过观看结果</li>
+                    <li>learnCloud添加留言功能</li>
+                  </ol>
+                </div>
+                <div class="link">
+                  <button class>
+                    <a
+                      class="btn-default"
+                      href="https://github.com/wuliguaiguaia/animation-Doraemon"
+                      target="_blank"
+                    >项目源码</a>
+                  </button>
+                  <button class>
+                    <a
+                      class="btn-default"
+                      href="https://wuliguaiguaia.github.io/animation-Doraemon/index.html"
+                      target="_blank"
+                    >项目预览</a>
+                  </button>
+                </div>
+                <div class="slide-icon">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zuoyouhuadong"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </transition>
+          <transition name="rightMove">
+            <div class="right" v-show="show(3,'showRight')">
+              <div class="pic">
+                <myswiper :lists="DoraemonList"></myswiper>
               </div>
             </div>
           </transition>
@@ -174,7 +235,7 @@
   </div>
 </template>
 <script>
-import swiper from "@/components/swiper";
+import myswiper from "@/components/myswiper";
 import $ from "jquery";
 
 export default {
@@ -183,8 +244,6 @@ export default {
       len: 3,
       touchStartX: 0,
       touchDiffX: 0,
-      // touchStartY: 0,
-      // touchDiffY: 0,
       page: 0,
       dir: "hor",
       status: "showLeft",
@@ -209,7 +268,11 @@ export default {
         { img: require("./mall/page3.jpg") },
         { img: require("./mall/page5.jpg") },
         { img: require("./mall/page4.jpg") }
-      ]
+      ],
+      DoraemonList: [
+        { img: require("./Doraemon/1.jpg") },
+        { img: require("./Doraemon/2.jpg") }
+      ],
     };
   },
   mounted() {
@@ -217,7 +280,7 @@ export default {
     this.init();
     this.onScroll();
   },
-  components: { swiper },
+  components: { myswiper },
   watch: {
     touchDiffX(val) {
       if (val > 100) {
@@ -273,11 +336,8 @@ export default {
     onScroll() {
       $(".container").on("scroll", () => {
         $(".portfolio .item-wrapper").each((i, el) => {
-          console.log($(el).offset().top, i);
-
           if ($(el).offset().top < $(el).height() / 1.2) {
             this.page = i;
-            console.log($(el).css("opacity"), "opaci");
             if ($(el).css("opacity") == 0) {
               $(".portfolio section")
                 .eq(i)
@@ -355,6 +415,12 @@ export default {
   transform: translateY(0);
 }
 
+ol.showStyle{
+  li::before{
+    content: "*";
+    margin-right:7px;
+  }
+}
 .portfolio {
   color: #fff;
   width: 100%;

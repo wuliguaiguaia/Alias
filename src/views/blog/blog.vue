@@ -29,11 +29,11 @@
           </svg>
         </a>
       </div>
-      <div id="bottomIcon">
+      <!-- <div id="bottomIcon">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-shuangjiantouxia"></use>
         </svg>
-      </div>
+      </div>-->
     </div>
     <div class="card card2">
       <h2 class="title">
@@ -82,11 +82,11 @@
           </svg>
         </a>
       </div>
-      <div id="bottomIcon">
+      <!-- <div id="bottomIcon">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-shuangjiantouxia"></use>
         </svg>
-      </div>
+      </div>-->
     </div>
     <div class="card card3">
       <h2 class="title">
@@ -133,6 +133,93 @@
         </a>
       </div>
     </div>
+    <div class="card card4">
+      <h2 class="title">
+        <a href="https://zhuanlan.zhihu.com/p/46093461" target="_blank" rel="noopener noreferrer">
+          HTTP 入门
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zhifeiji"></use>
+          </svg>
+        </a>
+      </h2>
+      <ul class="keyword flex-wrap">关键词：
+        <li>URL/URI</li>,
+        <li>请求/响应格式</li>,
+        <li>常用HTTP状态码</li>
+      </ul>
+      <article>
+        <div>
+          <div class="prev">
+            <h4>本文目录：</h4>
+            <ul>
+              <li>WWW 到底做了那些贡献而走向全世界</li>
+              <li>URL 与 URI</li>
+              <li>DNS</li>
+              <li>http在服务器和浏览器沟通时的作用</li>
+              <li>curl 命令 与 请求和响应的羁绊</li>
+              <li>http请求的格式</li>
+              <li>http响应的格式</li>
+              <li>HTTP状态码</li>
+            </ul>
+          </div>
+          <div>
+            <h4>一. WWW(World Wide Web)</h4>
+            <p style="text-indent:20px">在网页出来之前，人们是通过邮件交流信息的，www 组织是如何做到只要输入网址就能浏览网页的？用了这么多年浏览器，这真是一个令人匪夷所思的事件!！！那我们来看看到底是谁做了哪些神奇的事情，才让我们有机会处于一个信息时代。</p>
+            <p style="text-indent:20px">传说，Tim Berners-Lee 在 90年左右发明了第一个页面 ，第一个服务器，第一个浏览器，这是一个简单而完美的系统，现代浏览器的雏形，至此以后便打开了一个新的世界，WWW可以让web客户端（常用浏览器）访问浏览器web服务器上的页面，是一个由许多互相链接的超文本组成的系统，通过互联网的访问。在这个系统中，每个有用的事物，称为“资源”，并且由一个全局统一资源标识符（URI：Uniform Resource Identifier）标识，这些资源通过超文本传输协议（Hypertext Transfer Protocol)传送给用户，而用户通过点击链接来获得资源。</p>
+          </div>
+        </div>...
+      </article>
+      <div class="link">
+        <a href="https://zhuanlan.zhihu.com/p/46093461" target="_blank">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-cc-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="card card5">
+      <h2 class="title">
+        <a href="https://zhuanlan.zhihu.com/p/54820029" target="_blank" rel="noopener noreferrer">
+          Vue 组件之间的数据通信
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-zhifeiji"></use>
+          </svg>
+        </a>
+      </h2>
+      <ul class="keyword flex-wrap">关键词：
+        <li>prop</li>,
+        <li>eventHub</li>,
+        <li>v-model</li>,
+        <li>sync</li>
+      </ul>
+      <article>
+        <div>
+          <h4>一.父子通信：</h4>
+          <p>父对子：prop传递数据</p>
+          <p>子对父：$emit触发自定义事件</p>
+          <p>注意：在子组件内部不能对父组件传进来的数据进行修改(如下报错)，一般用data接收，或者computed返回给新属性，</p>
+          <p>...</p>
+          <p>1>.引用数据类型：</p>
+          <p>如果父组件传递给子组件的是一个引用类型的数据，在子组件内部对数据源进行修改的时候，父组件会同步修改。</p>
+          <p>为了避免同步修改，需要对其进行深复制</p>
+          <pre>props:['obj'],
+data(){
+  return {
+    myObj: JSON.parse(JSON.stringify(this.obj))
+  }
+}</pre>
+          <p>.2>自定义事件</p>
+          <p>引用数据类型会同步修改，但简单类型却不行。</p>
+        </div>...
+      </article>
+      <div class="link">
+        <a href="https://zhuanlan.zhihu.com/p/54820029" target="_blank">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-cc-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -154,16 +241,15 @@ export default {
     onScroll() {
       $(".container").on("scroll", () => {
         $(".blog .card").each((i, el) => {
-          console.log($(el).offset().top,i);
-          console.log($(el).height()/1.5 ,'xxx');
-          
-          
+          console.log($(el).offset().top, i);
+          console.log($(el).height() / 1.5, "xxx");
+
           if ($(el).offset().top < $(el).height() / 1.5) {
             // this.page = i;
-            console.log(i,'ixx');
-            
+            console.log(i, "ixx");
+
             if ($(el).css("opacity") == 0) {
-            console.log(i,'ixx');
+              console.log(i, "ixx");
               $(el)
                 .css({ opacity: 1 })
                 .addClass("animated bounceInUp")
@@ -216,78 +302,78 @@ image.onload = () => {
   // margin: 50px;
 }
 
-  .card {
-    padding: 20px 20px 10px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: none;
-    position: relative;
+.card {
+  padding: 20px 20px 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  position: relative;
 
-    .title {
-      cursor: pointer;
-      font-size: 19px;
-      margin-bottom: 5px;
-      a {
-        color: inherit;
-        .icon {
-          width: 25px;
-          height: 25px;
-        }
+  .title {
+    cursor: pointer;
+    font-size: 19px;
+    margin-bottom: 5px;
+    a {
+      color: inherit;
+      .icon {
+        width: 25px;
+        height: 25px;
       }
     }
-    article {
-      color: #c1c1c1;
-      font-size: 14px;
-      .prev {
-        h4 {
-          margin: 3px 0;
-        }
-        ul {
-          margin-left: 14px;
-        }
-        margin-bottom: 10px;
-      }
-      pre {
-        font-family: "微软雅黑";
-        font-size: 12px;
-        font-size: 12px;
-        border: 1px solid #696969;
-        box-sizing: content-box;
-        padding: 5px;
-        margin-top: 5px;
-        width: 100%;
-        overflow: hidden;
-      }
+  }
+  article {
+    color: #c1c1c1;
+    font-size: 14px;
+    .prev {
       h4 {
-        margin: 5px 0;
+        margin: 3px 0;
       }
       ul {
         margin-left: 14px;
       }
-    }
-    .keyword {
-      font-size: 12px;
       margin-bottom: 10px;
-      color: #ada5a5;
-
-      li {
-        margin-right: 10px;
-      }
     }
-    .link {
-      margin-top: 15px;
-      a {
-        color: #fff;
-        .icon {
-          width: 25px;
-          height: 25px;
-        }
+    pre {
+      font-family: "微软雅黑";
+      font-size: 12px;
+      font-size: 12px;
+      border: 1px solid #696969;
+      box-sizing: content-box;
+      padding: 5px;
+      margin-top: 5px;
+      width: 100%;
+      overflow: hidden;
+    }
+    h4 {
+      margin: 5px 0;
+    }
+    ul {
+      margin-left: 14px;
+    }
+  }
+  .keyword {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #ada5a5;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+  .link {
+    margin-top: 15px;
+    a {
+      color: #fff;
+      .icon {
+        width: 25px;
+        height: 25px;
       }
     }
   }
-@media screen and (max-width:500px){
-.card .title{
-  font-size: 16px;
 }
+@media screen and (max-width: 500px) {
+  .card .title {
+    font-size: 16px;
+  }
 }
 </style>
 

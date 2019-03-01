@@ -16,9 +16,9 @@
         <div class="item item2" data-tilt data-tilt-scale="1.1">
           <h1>02</h1>
           <ol>
-            <li>1. 熟练 Javascript 及 常用es6语法</li>
+            <li>1. 熟练 JavaScript 及 常用ES6语法</li>
             <li>2. 了解原型，闭包，this</li>
-            <li>3. 熟练 web存储，熟练异步操作ajax，promise，await/async</li>
+            <li>3. 熟练 web存储，熟练异步操作Ajax，promise，Await/Async</li>
             <li>4. 熟练常用正则表达式</li>
           </ol>
         </div>
@@ -27,9 +27,9 @@
         <div class="item item3" data-tilt data-tilt-scale="1.1">
           <h1>03</h1>
           <ol>
-            <li>熟练 jquery，bootstrap</li>
-            <li>熟练 sass 嵌套，函数，mixin</li>
-            <li>熟悉 同源协议，跨域，jsonp</li>
+            <li>熟练 JQuery，Bootstrap</li>
+            <li>熟练 Sass 嵌套，函数，mixin</li>
+            <li>熟悉 同源协议，跨域，Jsonp</li>
           </ol>
         </div>
       </div>
@@ -37,8 +37,8 @@
         <div class="item item4" data-tilt data-tilt-scale="1.1">
           <h1>04</h1>
           <ol>
-            <li>熟练 vueJs 语法，了解生命周期，指令，计算属性等</li>
-            <li>熟练 vue-router 路由配置，vuex 状态管理</li>
+            <li>熟练 VueJs 语法，了解生命周期，指令，计算属性等</li>
+            <li>熟练 Vue-router 路由配置，Vuex 状态管理</li>
             <li>了解 MVC MVVM 开发模式，代码层面向模块化组件化靠近</li>
           </ol>
         </div>
@@ -47,8 +47,8 @@
         <div class="item item5" data-tilt data-tilt-scale="1.1">
           <h1>05</h1>
           <ol>
-            <li>熟悉 http 协议</li>
-            <li>使用过 gulp，webpack 基本配置，用过parcel</li>
+            <li>熟悉 HTTP 协议</li>
+            <li>使用过 Gulp，Webpack 基本配置，用过 Parcel</li>
             <li>熟练小程序基本语法及云开发，有项目经验</li>
             <li>热爱前端，对新技术无限好奇，喜欢写博客</li>
           </ol>

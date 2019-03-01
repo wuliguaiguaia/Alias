@@ -9,11 +9,9 @@
   },
   "dependencies": {
     "animate.css": "^3.7.0",
-    "fullpage.js": "^3.0.4",
     "jquery": "^3.3.1",
     "leancloud-storage": "^3.11.1",
     "particles.js": "^2.0.0",
-    "swiper": "^4.4.6",
     "vanilla-tilt": "^1.6.1",
     "vconsole": "^3.3.0",
     "vue": "^2.5.22",

@@ -48,12 +48,12 @@
             <span>CET-4</span>
           </div>
           <div class="item">
-            <span>Github</span>
+            <span class="mainText">Github</span>
             <span><a href="https://github.com/wuliguaiguaia?tab=repositories" target="_blank">wuliguaiguaia</a>
             </span>
           </div>
           <div class="item">
-            <span>博客(知乎)</span>
+            <span class="mainText">博客(知乎)</span>
             <span><a href="https://www.zhihu.com/people/da-da-da-xiao-jie-82/posts" target="_blank">森仪</a></span>
           </div>
         </div>
@@ -64,26 +64,23 @@
         <h2>专业技能</h2>
         <div class="detail skills">
           <li>HTML5,CSS3,JavaScript</li>
-          <li>jQuery,bootstrap,sass</li>
-          <li>es6，异步编程，Jsonp</li>
-          <li>正则，web存储与缓存</li>
-          <li>Vue,axios,vuex,vue-router</li>
-          <li>MVC MVVM 模块化，组件化</li>
-          <li>小程序及云开发</li>
-          <li>使用gulp,基础 webpack</li>
-          <li>熟悉http协议</li>
+          <li>JQuery,Bootstrap,Sass</li>
+          <li>ES6,promise,Await/Async</li>
+          <li>Vue + Vue-router + Vuex</li>
+          <li>正则,web存储</li>
+          <li>熟悉HTTP</li>
         </div>
       </section>
       <section>
         <h2>个人荣誉</h2>
         <div class="detail personal">
           <div class="item">
-              <li>国家励志奖学金</li>
-              <li>品学兼优二等奖</li>
-              <li>英语四级</li>
-              <li>校园歌舞大赛三等奖</li>
-              <li>校级优秀社团干部</li>
-              <li>优秀共青团员，三好学生</li>
+            <li class="mainText">国家励志奖学金</li>
+            <li class="mainText">品学兼优二等奖</li>
+            <li>英语四级</li>
+            <li>校园歌舞大赛三等奖</li>
+            <li>校级优秀社团干部</li>
+            <li>优秀共青团员，三好学生</li>
           </div>
         </div>
       </section>
@@ -119,56 +116,76 @@
 
     </aside>
     <main>
-      <section class="list">
+      <section class="list protfilo">
         <h2>项目经历</h2>
         <div class="item">
           <h3>① 网易云音乐</h3>
           <ul>
-            <span class="title">项目简介:</span>仿移动端网易云音乐，包含后台管理系统，支持上传歌曲，歌词，编辑歌曲，删除等，支持定制歌单。可在线听歌，查看歌词。
+            <span class="title">项目简介:</span>仿移动端网易云音乐，包含<span class="mainText">后台管理系统</span>，支持拖拽上传歌曲，歌词，编辑歌曲，删除等，支持<span class="mainText">定制歌单</span>。可在线<span class="mainText">听歌</span>，查看歌词。
             <p class="title">项目总结：</p>
             <ol>
-              <li>使用语言：html + css + sass + javascript + jquery</li>
-              <li>使用 flex/vw/vh 进行移动端适配，并定制全局 reset.css</li>
-              <li>使用 localStorage 存储用户搜索历史</li>
-              <li>仿 vueJs 构建 MVC 设计模式,编写 eventHub 发布订阅模式进行各模块间逻辑交互</li>
-              <li>learnCloud 进行数据库存储,七牛云文件上传</li>
+              <li class="mainText">使用语言：HTML + CSS + Sass + JavaScript + JQuery</li>
+              <li>使用 flex/vw/vh 进行<span class="mainText">移动端适配</span>，并定制全局 reset.css</li>
+              <li>使用 <span class="mainText">localStorage</span> 存储用户搜索历史</li>
+              <li>仿 vueJs 构建 <span class="mainText">MVC 设计模式，项目模块化结构清晰</span></li>
+              <li>编写 <span class="mainText">eventHub 发布订阅模式 </span>进行各模块间逻辑交互</li>
+              <li><span class="mainText">自定义</span> 歌单数据及歌曲信息</li>
             </ol>
-            <p>
-              <a class="title noprint" href="https://github.com/wuliguaiguaia/netease-music" target="_blank">项目源码及截图</a></p>
-          </ul>
-        </div>
-        <div class="item">
-          <h3>② Vue重构移动端有赞商城</h3>
-          <ul>
-            <span class="title">项目简介:</span>仿移动端有赞商城，使用mock数据，支持地址编辑，购物车结算，查看商品，搜索商品及店铺等功能
-            <p class="title">项目总结：</p>
-            <ol>
-              <li>使用语言：vue + axios + vuex + vue-router + sass + eslint + es6</li>
-              <li>使用 vue-cli3 进行原型开发并配置 vue.config.js</li>
-              <li>使用 vuex 进行地址状态管理，支持增删改查</li>
-              <li>使用 axios + promise 异步请求</li>
-              <li>使用 easy-mock 接口 管理平台，使用 mock.js 进行数据模拟</li>
-              <li>使用 mint-ui + velocity-animate 插件</li>
-            </ol>
-            <div>
-              <a class="title noprint" href="https://github.com/wuliguaiguaia/vue_youzan" target="_blank">项目源码及截图</a>
-              <a class="title noprint" href="https://wuliguaiguaia.github.io/vue_youzan/dist/index.html#/index" target="_blank">项目预览</a>
+            <div class="linkwrap">
+              <a class="mainText btnLink" href="https://github.com/wuliguaiguaia/netease-music" target="_blank">项目源码</a>
+              <a class="mainText btnLink" href="https://wuliguaiguaia.github.io/netease-music/src/index.html" target="_blank">项目预览</a>
             </div>
           </ul>
         </div>
         <div class="item">
-          <h3>③ 小程序翻译工具</h3>
+          <h3>② 有赞商城</h3>
           <ul>
-            <span class="title">项目简介:</span>一款多功能翻译小程序，支持多语言，历史，收藏，留言等功能，使用云开发与本地存储。
+            <span class="title">项目简介:</span>仿移动端有赞商城，使用mock数据，支持地址编辑，购物车结算，查看商品，搜索商品及店铺等功能
             <p class="title">项目总结：</p>
             <ol>
-              <li>云开发，数据库与云函数的使用</li>
-              <li>小程序生命周期</li>
-              <li>其他涉及音频，存储，动画等相关技巧</li>
+              <li class="mainText">使用语言：vue + axios + vuex + vue-router + sass + eslint + es6</li>
+              <li>使用 <span class="mainText">vue-cli3</span> 进行原型开发并配置 vue.config.js</li>
+              <li>使用 <span class="mainText">vuex 进行地址状态管理</span>，支持增删改查</li>
+              <li>使用 <span class="mainText">axios + promise</span> 异步请求</li>
+              <li>使用 mock.js 进行<span class="mainText">数据模拟,</span>在 easy-mock平台<span class="mainText">配置请求接口</span></li>
             </ol>
-            <div>
-              <a class="title noprint" href="https://github.com/wuliguaiguaia/miniprogram-translate" target="_blank">项目源码及截图</a>
-              <a class="title noprint" href="./mini.jpg" target="_blank">项目预览</a>
+            <div class="linkwrap">
+              <a class="mainText btnLink" href="https://github.com/wuliguaiguaia/vue_youzan" target="_blank">项目源码</a>
+              <a class="mainText btnLink" href="https://wuliguaiguaia.github.io/vue_youzan/dist/index.html#/index" target="_blank">项目预览</a>
+            </div>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>③ 猿译 for fun</h3>
+          <ul>
+            <span class="title">项目简介:</span>一款多功能翻译小程序，<span class="mainText">支持多语言</span>，<span class="mainText">历史</span>，<span class="mainText">收藏</span>，<span class="mainText">留言</span>等功能，使用云开发与本地存储。
+            <p class="title">项目总结：</p>
+            <ol>
+              <li>使用<span class="mainText">web存储</span>用户搜索，用户便于查看翻译记录</li>
+              <li>使用<span class="mainText">云开发</span>做用户收藏，用数据库进行<span class="mainText">永久存储</span></li>
+              <li>历史与收藏<span class="mainText">页面关联</span>，可<span class="mainText">随时控制是否收藏</span></li>
+              <li>留言页面详细<span class="mainText">记录用户信息</span>且用户可删除</li>
+            </ol>
+            <div class="linkwrap">
+              <a class="mainText btnLink" href="https://github.com/wuliguaiguaia/miniprogram-translate" target="_blank">项目源码</a>
+              <a class="mainText btnLink" href="./mini.jpg" target="_blank">项目预览</a>
+            </div>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>④ 调皮的机器猫</h3>
+          <ul>
+            <span class="title">项目简介:</span>这是一个用<span class="mainText">css3</span>向画面绘制机器猫的项目，亮点在于<span class="mainText">添加文本与绘制图形同步进行</span>，让用户直观看到整个绘制过程。
+            <p class="title">项目总结：</p>
+            <ol>
+              <li>可选择<span class="mainText">重新绘制</span>将整个画面重置</li>
+              <li>可<span class="mainText">加速减速控制绘制节奏</span></li>
+              <li>可<span class="mainText">随时暂停或直接跳过</span>观看结果</li>
+              <li>同时具有<span class="mainText">留言</span>功能，获得用户反馈</li>
+            </ol>
+            <div class="linkwrap">
+              <a class="mainText btnLink" href="https://github.com/wuliguaiguaia/animation-Doraemon" target="_blank">项目源码</a>
+              <a class="mainText btnLink" href="https://wuliguaiguaia.github.io/animation-Doraemon/index.html" target="_blank">项目预览</a>
             </div>
           </ul>
         </div>
@@ -176,8 +193,8 @@
       <section class="list blog">
         <h2>精选博客</h2>
         <div class="item">
-          <h3 class="title">
-            <a href="https://zhuanlan.zhihu.com/p/50813566" target="_blank" rel="noopener noreferrer">
+          <h3>
+            <a  class="mainText" href="https://zhuanlan.zhihu.com/p/50813566" target="_blank" rel="noopener noreferrer">
               ① 浏览器发送请求的前世今生
             </a>
           </h3>
@@ -190,7 +207,7 @@
         </div>
         <div class="item">
           <h3 class="title">
-            <a href="https://zhuanlan.zhihu.com/p/48652245" target="_blank" rel="noopener noreferrer">
+            <a class="mainText" href="https://zhuanlan.zhihu.com/p/48652245" target="_blank" rel="noopener noreferrer">
               ② 移动端适配方案
             </a>
           </h3>
@@ -202,8 +219,8 @@
           </ul>
         </div>
         <div class="item">
-          <h3 class="title">
-            <a href="https://zhuanlan.zhihu.com/p/50533420" target="_blank" rel="noopener noreferrer">
+          <h3>
+            <a class="mainText" href="https://zhuanlan.zhihu.com/p/50533420" target="_blank" rel="noopener noreferrer">
               ③ JavaScript函数详解
             </a>
           </h3>
@@ -211,6 +228,31 @@
             <li>this/arguments</li>,
             <li>apply/call/bind</li>,
             <li>构造函数</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>
+            <a class="mainText" href="https://zhuanlan.zhihu.com/p/46093461" target="_blank" rel="noopener noreferrer">
+              ④ HTTP 入门
+            </a>
+          </h3>
+          <ul class="keyword flex-wrap">关键词：
+            <li>URL/URI</li>,
+            <li>请求/响应格式</li>,
+            <li>常用HTTP状态码</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>
+            <a class="mainText" href="https://zhuanlan.zhihu.com/p/54820029" target="_blank" rel="noopener">
+              ⑤ Vue 组件之间的数据通信
+            </a>
+          </h3>
+          <ul class="keyword flex-wrap">关键词：
+            <li>prop</li>,
+            <li>eventHub</li>,
+            <li>v-model</li>,
+            <li>sync</li>
           </ul>
         </div>
       </section>
