@@ -9,7 +9,7 @@
               <use xlink:href="#icon-call"></use>
             </svg>
           </div>
-          <div>18829024235</div>
+          <div>xxxx</div>
         </div>
       </div>
 
@@ -32,7 +32,7 @@
               <use xlink:href="#icon-email"></use>
             </svg>
           </div>
-          <div>1944063509@qq.com</div>
+          <div>xxx@qq.com</div>
         </div>
       </div>
       <div class="item uniq">
