@@ -2810,13 +2810,6 @@ dom-serializer@0:
     domelementtype "^1.3.0"
     entities "^1.1.1"
 
-dom7@^2.1.2:
-  version "2.1.3"
-  resolved "http://registry.npm.taobao.org/dom7/download/dom7-2.1.3.tgz#a736f9c3bfbc4ca039a81cd095f97d1d7f3de19c"
-  integrity sha1-pzb5w7+8TKA5qBzQlfl9HX894Zw=
-  dependencies:
-    ssr-window "^1.0.1"
-
 domain-browser@^1.1.1:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/domain-browser/download/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
@@ -3719,11 +3712,6 @@ fstream@^1.0.0, fstream@^1.0.2:
     inherits "~2.0.0"
     mkdirp ">=0.5 0"
     rimraf "2"
-
-fullpage.js@^3.0.4:
-  version "3.0.4"
-  resolved "http://registry.npm.taobao.org/fullpage.js/download/fullpage.js-3.0.4.tgz#bb3eb1af7ecb5706866abf64ffc7b2535cec39b7"
-  integrity sha1-uz6xr37LVwaGar9k/8eyU1zsObc=
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -7475,11 +7463,6 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-ssr-window@^1.0.1:
-  version "1.0.1"
-  resolved "http://registry.npm.taobao.org/ssr-window/download/ssr-window-1.0.1.tgz#30752a6a4666e7767f0b7e6aa6fc2fdbd0d9b369"
-  integrity sha1-MHUqakZm53Z/C35qpvwv29DZs2k=
-
 ssri@^5.2.4:
   version "5.3.0"
   resolved "http://registry.npm.taobao.org/ssri/download/ssri-5.3.0.tgz#ba3872c9c6d33a0704a7d71ff045e5ec48999d06"
@@ -7748,14 +7731,6 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swiper@^4.4.6:
-  version "4.4.6"
-  resolved "http://registry.npm.taobao.org/swiper/download/swiper-4.4.6.tgz#0dfa9d66e39811c73e96ea55cea61047a4091667"
-  integrity sha1-DfqdZuOYEcc+lupVzqYQR6QJFmc=
-  dependencies:
-    dom7 "^2.1.2"
-    ssr-window "^1.0.1"
-
 table@4.0.2:
   version "4.0.2"
   resolved "http://registry.npm.taobao.org/table/download/table-4.0.2.tgz#a33447375391e766ad34d3486e6e2aedc84d2e36"
@@ -8015,9 +7990,9 @@ uglify-js@3.4.x:
     source-map "~0.6.1"
 
 underscore@^1.8.3:
-  version "1.9.1"
-  resolved "http://registry.npm.taobao.org/underscore/download/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
-  integrity sha1-BtzjSg5op7q8KbNluOdLiSUgOWE=
+  version "1.13.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.13.1.tgz#0c1c6bd2df54b6b69f2314066d65b6cde6fcf9d1"
+  integrity sha512-hzSoAVtJF+3ZtiFX0VgfFPHEDRm7Y/QPjGyNo4TVdnDTdft3tr8hEkD25a1jC+TjTuE7tkHGKkhwCgs9dgBB2g==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
